@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="formdiv">
+      <button class="btn btn-success" (click)="addStudent()">Add Student</button>
+    </div>
+    <div class="tablediv">
+      <table>
+        <tr>
+          <th>Index</th>
+          <th>Roll Number</th>
+          <th>Student Name</th>
+          <th>Subject</th>
+          <th>Action</th>
+        </tr>
+        <tr *ngFor = " let student of studentArray; let i= index">
+          <td>{{i+1}}</td>
+          <td>{{student.Rollnumber}}</td>
+          <td>{{student.Name}}</td>
+          <td>{{student.standard}}</td>
+          <td>
+            <button class="btn btn-info" (click)= editStudent(student,i)>Edit</button>
+            <button class="btn btn-danger" (click)= tryDelete(i)>Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>

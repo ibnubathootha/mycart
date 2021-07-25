@@ -1,0 +1,34 @@
+.sidebar-container {
+    background-color: #dde3e8;
+    color: cornsilk;
+    height: 100%;
+    color: black;
+}
+.sidebar-container ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.sidebar-container ul li{
+    height: 30px;
+}
+.sidebar-container a{
+    text-decoration: none;
+    color: black;
+}
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15%;
+}
+.menu-link i,span{
+    margin-left: 10px;
+}
+
+.menu-link:hover{
+    color: #009688!important;
+}
+.router-link-active {
+	color: #009688!important;
+	font-weight: bold;
+}

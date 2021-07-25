@@ -1,0 +1,12 @@
+<div>
+        <div class="margin-bottom-10" >
+            <div class="card-container" *ngFor = " let item of itemcartArray; let i= index">
+                <div>
+                    <img src="{{item.imageUrl}}" alt="" class="item-image">
+                    <p>{{item.title}}</p>
+                    <p>{{item.price}}</p>
+                </div>
+            </div>
+        </div>
+</div>
+
